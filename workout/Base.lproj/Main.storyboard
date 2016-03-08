@@ -108,7 +108,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="uSR-Ox-gYc">
             <objects>
-                <tabBarController id="KGi-Be-UIt" customClass="TabBarController" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="KGi-Be-UIt" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="eBJ-3y-zPQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>

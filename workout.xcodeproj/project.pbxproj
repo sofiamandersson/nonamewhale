@@ -12,7 +12,6 @@
 		054FA6111C8F19F9004BEEB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA60F1C8F19F9004BEEB4 /* Main.storyboard */; };
 		054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6121C8F19F9004BEEB4 /* Assets.xcassets */; };
 		054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */; };
-		05BFC9961C8F2DC4003C9A56 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9951C8F2DC4003C9A56 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		054FA6121C8F19F9004BEEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054FA6151C8F19F9004BEEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054FA6171C8F19F9004BEEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05BFC9951C8F2DC4003C9A56 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 				054FA60B1C8F19F8004BEEB4 /* AppDelegate.swift */,
 				054FA60D1C8F19F8004BEEB4 /* ViewController.swift */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
-				05BFC9951C8F2DC4003C9A56 /* TabBarController.swift */,
 				054FA6121C8F19F9004BEEB4 /* Assets.xcassets */,
 				054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */,
 				054FA6171C8F19F9004BEEB4 /* Info.plist */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BFC9961C8F2DC4003C9A56 /* TabBarController.swift in Sources */,
 				054FA60E1C8F19F8004BEEB4 /* ViewController.swift in Sources */,
 				054FA60C1C8F19F8004BEEB4 /* AppDelegate.swift in Sources */,
 			);
