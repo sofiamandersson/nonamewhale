@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="320" y="-887"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="uSR-Ox-gYc">
             <objects>
-                <tabBarController id="KGi-Be-UIt" sceneMemberID="viewController">
+                <tabBarController id="KGi-Be-UIt" customClass="TabBarViewController" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="eBJ-3y-zPQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -125,7 +125,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kK3-mx-vvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="40"/>
+            <point key="canvasLocation" x="-534.5" y="45.5"/>
         </scene>
     </scenes>
 </document>
