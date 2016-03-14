@@ -11,7 +11,12 @@
 		054FA6111C8F19F9004BEEB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA60F1C8F19F9004BEEB4 /* Main.storyboard */; };
 		054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6121C8F19F9004BEEB4 /* Assets.xcassets */; };
 		054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */; };
+		0582A2951C96BAC400801B7D /* WorkoutFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */; };
+		0582A2991C96BF0300801B7D /* ProfileTableRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */; };
+		0582A29B1C96BF1900801B7D /* ProfileTableLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
+		05F9FA4F1C92F8B100D8261D /* TrophyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */; };
+		05F9FA5D1C930AF100D8261D /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +26,12 @@
 		054FA6121C8F19F9004BEEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054FA6151C8F19F9004BEEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054FA6171C8F19F9004BEEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedItem.swift; sourceTree = "<group>"; };
+		0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableRightCell.swift; path = ../ProfileTableRightCell.swift; sourceTree = "<group>"; };
+		0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableLeftCell.swift; path = ../ProfileTableLeftCell.swift; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyVC.swift; sourceTree = "<group>"; };
+		05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableVC.swift; path = ../ProfileTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,25 @@
 			children = (
 				054FA60B1C8F19F8004BEEB4 /* AppDelegate.swift */,
 				05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */,
+				05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */,
+				05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */,
+				0582A29C1C96C04400801B7D /* ProfileFeed */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
 				054FA6121C8F19F9004BEEB4 /* Assets.xcassets */,
 				054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */,
 				054FA6171C8F19F9004BEEB4 /* Info.plist */,
 			);
 			path = workout;
+			sourceTree = "<group>";
+		};
+		0582A29C1C96C04400801B7D /* ProfileFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */,
+				0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */,
+				0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */,
+			);
+			name = ProfileFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */,
+				0582A2991C96BF0300801B7D /* ProfileTableRightCell.swift in Sources */,
+				0582A2951C96BAC400801B7D /* WorkoutFeedItem.swift in Sources */,
+				05F9FA5D1C930AF100D8261D /* ProfileTableVC.swift in Sources */,
 				054FA60C1C8F19F8004BEEB4 /* AppDelegate.swift in Sources */,
+				0582A29B1C96BF1900801B7D /* ProfileTableLeftCell.swift in Sources */,
+				05F9FA4F1C92F8B100D8261D /* TrophyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
