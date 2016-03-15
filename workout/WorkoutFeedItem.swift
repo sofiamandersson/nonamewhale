@@ -12,11 +12,15 @@ class WorkoutFeedItem {
     
     var labelProfileFeed = ""
     var imageProfileFeed = ""
+    var graphProfileFeed = ""
+    var dateProfileFeed = ""
     
-    init (labelProfileFeed: String, imageProfileFeed: String ) {
+    init (labelProfileFeed: String, imageProfileFeed: String, graphProfileFeed: String, dateProfileFeed: String) {
         
         self.labelProfileFeed = labelProfileFeed
         self.imageProfileFeed = imageProfileFeed
+        self.graphProfileFeed = graphProfileFeed
+        self.dateProfileFeed = dateProfileFeed
         
     }
     

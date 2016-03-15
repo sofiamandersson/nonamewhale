@@ -20,10 +20,10 @@ class ProfileTableVC: UITableViewController {
         self.largeProfileImage.layer.cornerRadius = self.largeProfileImage.frame.size.width / 2
         self.largeProfileImage.clipsToBounds = true
         
-        let feed1 = WorkoutFeedItem(labelProfileFeed: "ran af", imageProfileFeed: "ran.jpg")
-        let feed2 = WorkoutFeedItem(labelProfileFeed: "won", imageProfileFeed: "winner.jpg")
-        let feed3 = WorkoutFeedItem(labelProfileFeed: "won2", imageProfileFeed: "winner.jpg")
-        let feed4 = WorkoutFeedItem(labelProfileFeed: "won3", imageProfileFeed: "winner.jpg")
+        let feed1 = WorkoutFeedItem(labelProfileFeed: "Ran 10km", imageProfileFeed: "ran.jpg", graphProfileFeed: "graph1.png", dateProfileFeed: "15/3-2016")
+        let feed2 = WorkoutFeedItem(labelProfileFeed: "Cycled 20km", imageProfileFeed: "cycled.jpg", graphProfileFeed: "graph2.png", dateProfileFeed: "13/3-2016")
+        let feed3 = WorkoutFeedItem(labelProfileFeed: "Swam 10km", imageProfileFeed: "swam.jpg", graphProfileFeed: "graph2.png", dateProfileFeed: "9/3-2016")
+        let feed4 = WorkoutFeedItem(labelProfileFeed: "Ran 5km", imageProfileFeed: "ran.jpg", graphProfileFeed: "graph1.png", dateProfileFeed: "5/3-2016")
         
         workoutFeedArray.append(feed1)
         workoutFeedArray.append(feed2)
@@ -44,7 +44,7 @@ class ProfileTableVC: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 || indexPath.row == 2{
+        if indexPath.row % 2 == 0 {
         
             let cell = tableView.dequeueReusableCellWithIdentifier("RightCell", forIndexPath: indexPath) as! ProfileTableRightCell
 
@@ -76,6 +76,11 @@ class ProfileTableVC: UITableViewController {
         
         feedItemSelected.imageDetail = feedItemDetail.imageProfileFeed
         feedItemSelected.labelDetail = feedItemDetail.labelProfileFeed
+        feedItemSelected.graphDetail = feedItemDetail.graphProfileFeed
+        feedItemSelected.dateDetail = feedItemDetail.dateProfileFeed
+        
+        
+        
         
         self.presentViewController(feedItemSelected, animated: true, completion: nil)
         
