@@ -9,11 +9,16 @@
 import UIKit
 
 class ProfileTableVC: UITableViewController {
+ 
+    @IBOutlet weak var largeProfileImage: UIImageView!
     
     var workoutFeedArray: [WorkoutFeedItem] = [WorkoutFeedItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.largeProfileImage.layer.cornerRadius = self.largeProfileImage.frame.size.width / 2
+        self.largeProfileImage.clipsToBounds = true
         
         let feed1 = WorkoutFeedItem(labelProfileFeed: "ran af", imageProfileFeed: "ran.jpg")
         let feed2 = WorkoutFeedItem(labelProfileFeed: "won", imageProfileFeed: "winner.jpg")
@@ -25,7 +30,7 @@ class ProfileTableVC: UITableViewController {
         workoutFeedArray.append(feed3)
         workoutFeedArray.append(feed4)
         
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        self.tableView.rowHeight = 150.0
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -62,7 +67,21 @@ class ProfileTableVC: UITableViewController {
             
             return cell
         }
-    }
+    }//end of cell function
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let feedItemDetail = workoutFeedArray[indexPath.row]
+        let feedItemSelected:ProfileFeedDetailVC = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileFeedDetailVC") as! ProfileFeedDetailVC
+        
+        feedItemSelected.imageDetail = feedItemDetail.imageProfileFeed
+        feedItemSelected.labelDetail = feedItemDetail.labelProfileFeed
+        
+        self.presentViewController(feedItemSelected, animated: true, completion: nil)
+        
+        
+        
+    }// end of didSelectRowAtIndexPath
     
 
 }

@@ -15,6 +15,7 @@
 		0582A2991C96BF0300801B7D /* ProfileTableRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */; };
 		0582A29B1C96BF1900801B7D /* ProfileTableLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
+		05D7802A1C9739E0003D5E88 /* ProfileFeedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */; };
 		05F9FA4F1C92F8B100D8261D /* TrophyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */; };
 		05F9FA5D1C930AF100D8261D /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */; };
 /* End PBXBuildFile section */
@@ -30,8 +31,9 @@
 		0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableRightCell.swift; path = ../ProfileTableRightCell.swift; sourceTree = "<group>"; };
 		0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableLeftCell.swift; path = ../ProfileTableLeftCell.swift; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFeedDetailVC.swift; sourceTree = "<group>"; };
 		05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyVC.swift; sourceTree = "<group>"; };
-		05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableVC.swift; path = ../ProfileTableVC.swift; sourceTree = "<group>"; };
+		05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableVC.swift; path = ../ProfileTableVC.swift; sourceTree = "<group>"; tabWidth = 5; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */,
 				05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */,
 				05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */,
+				05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */,
 				0582A29C1C96C04400801B7D /* ProfileFeed */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
 				054FA6121C8F19F9004BEEB4 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				0582A2951C96BAC400801B7D /* WorkoutFeedItem.swift in Sources */,
 				05F9FA5D1C930AF100D8261D /* ProfileTableVC.swift in Sources */,
 				054FA60C1C8F19F8004BEEB4 /* AppDelegate.swift in Sources */,
+				05D7802A1C9739E0003D5E88 /* ProfileFeedDetailVC.swift in Sources */,
 				0582A29B1C96BF1900801B7D /* ProfileTableLeftCell.swift in Sources */,
 				05F9FA4F1C92F8B100D8261D /* TrophyVC.swift in Sources */,
 			);

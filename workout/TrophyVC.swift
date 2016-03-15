@@ -25,7 +25,7 @@ class TrophyVC: UIViewController {
 
     @IBAction func dismissBtn(sender: UIBarButtonItem) {
         
-        self.dismissViewControllerAnimated(true, completion: {});
+        self.dismissViewControllerAnimated(true, completion:{})
         
     }
 
