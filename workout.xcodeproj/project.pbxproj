@@ -68,10 +68,7 @@
 			children = (
 				054FA60B1C8F19F8004BEEB4 /* AppDelegate.swift */,
 				05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */,
-				05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */,
-				05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */,
-				05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */,
-				0582A29C1C96C04400801B7D /* ProfileFeed */,
+				05EDD65A1C99488300D1B13B /* Profile */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
 				054FA6121C8F19F9004BEEB4 /* Assets.xcassets */,
 				054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */,
@@ -88,6 +85,17 @@
 				0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */,
 			);
 			name = ProfileFeed;
+			sourceTree = "<group>";
+		};
+		05EDD65A1C99488300D1B13B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */,
+				05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */,
+				05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */,
+				0582A29C1C96C04400801B7D /* ProfileFeed */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
