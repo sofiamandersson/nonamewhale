@@ -18,10 +18,18 @@ class LeaderboardTableVC: UITableViewController {
         let person1 = LeaderboardItem(rankLeaderboard: "1", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
         let person2 = LeaderboardItem(rankLeaderboard: "2", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
         let person3 = LeaderboardItem(rankLeaderboard: "3", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person4 = LeaderboardItem(rankLeaderboard: "4", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person5 = LeaderboardItem(rankLeaderboard: "5", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person6 = LeaderboardItem(rankLeaderboard: "6", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person7 = LeaderboardItem(rankLeaderboard: "7", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
         
         leaderboardArray.append(person1)
         leaderboardArray.append(person2)
         leaderboardArray.append(person3)
+        leaderboardArray.append(person4)
+        leaderboardArray.append(person5)
+        leaderboardArray.append(person6)
+        leaderboardArray.append(person7)
 
         
     }
