@@ -5,25 +5,142 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Achivements & Challanges-->
-        <scene sceneID="7Nb-Qx-DYN">
+        <!--Challenges-->
+        <scene sceneID="SIR-7e-0G8">
             <objects>
-                <viewController title="Achivements &amp; Challanges" id="3fj-gN-cc2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W3W-gg-ndT"/>
-                        <viewControllerLayoutGuide type="bottom" id="vFe-Xf-Ldo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8Ij-pH-PW8">
+                <tableViewController storyboardIdentifier="ChallengesTVC" title="Challenges" id="YVb-aC-CbJ" customClass="ChallengesTableVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="181" sectionHeaderHeight="18" sectionFooterHeight="18" id="b7k-ZL-3ve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.2018332487" green="0.60231313620000004" blue="0.62618371210000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="C &amp; A" id="sqs-nV-KWd"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1xm-cd-c6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="uWC-6W-U7Z">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lmy-Nq-I74">
+                                    <rect key="frame" x="0.0" y="18" width="375" height="44"/>
+                                    <items>
+                                        <navigationItem id="NTH-em-UXL">
+                                            <nil key="title"/>
+                                            <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="3Af-Sv-HWq">
+                                                <rect key="frame" x="9" y="6" width="357" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Chellanges"/>
+                                                    <segment title="Achievements"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentedControllChellangesAchievements:" destination="YVb-aC-CbJ" eventType="valueChanged" id="qsi-70-IRt"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </navigationItem>
+                                    </items>
+                                </navigationBar>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChallengesCell" rowHeight="60" id="8Zf-lu-MnB" customClass="myCell" customModule="workout" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="111.5" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Zf-lu-MnB" id="10v-Yb-eQt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJm-ZN-GLi">
+                                            <rect key="frame" x="47" y="19" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YDH-et-zRo">
+                                            <rect key="frame" x="226" y="0.0" width="149" height="59.5"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myImageView" destination="YDH-et-zRo" id="K4d-Lf-CSV"/>
+                                    <outlet property="myLabel" destination="fJm-ZN-GLi" id="0Tw-ak-CbC"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AchievementsCell" rowHeight="60" id="frd-sG-U3d" customClass="myCell" customModule="workout" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="171.5" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="frd-sG-U3d" id="BtU-Lx-4Jk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6l-xM-ZiL">
+                                            <rect key="frame" x="48" y="19" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hF-eV-5zT">
+                                            <rect key="frame" x="226" y="-1" width="149" height="60"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myImageView" destination="0hF-eV-5zT" id="yv4-3X-Noh"/>
+                                    <outlet property="myLabel" destination="F6l-xM-ZiL" id="uoR-XE-jp1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YVb-aC-CbJ" id="rfl-0k-PMj"/>
+                            <outlet property="delegate" destination="YVb-aC-CbJ" id="gJV-B2-9He"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Callenge" id="PMd-JK-LsN"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="3Af-Sv-HWq" id="RxB-sv-Dls"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PX4-OE-Bp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="-54"/>
+            <point key="canvasLocation" x="362.5" y="-93.5"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="Mbh-1W-Oe9">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="nGC-r2-duB" customClass="DetailVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UGe-Gh-QwB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ImJ-ct-pku"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9TQ-zj-AOL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XsY-hj-Iru" customClass="De">
+                                <rect key="frame" x="67" y="69" width="240" height="238"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sov-yn-Jqa">
+                                <rect key="frame" x="57" y="342" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKl-6l-QJ5">
+                                <rect key="frame" x="44" y="426" width="287" height="141"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="detailImage" destination="XsY-hj-Iru" id="eVB-rI-zbc"/>
+                        <outlet property="detailLabel" destination="Sov-yn-Jqa" id="4Xr-KZ-FsR"/>
+                        <outlet property="moreInfoLabel" destination="VKl-6l-QJ5" id="c44-Yk-Or5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1s-ht-Npy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.5" y="-88.5"/>
         </scene>
         <!--Add-->
         <scene sceneID="Zzw-PV-Mec">
@@ -43,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6B-iP-SeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="722"/>
+            <point key="canvasLocation" x="319.5" y="721.5"/>
         </scene>
         <!--Goals-->
         <scene sceneID="A3c-Pd-YSM">
@@ -63,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2y-N8-jMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="1478"/>
+            <point key="canvasLocation" x="319.5" y="1478.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="2z3-h5-Y2E">
@@ -83,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnL-dd-krj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309.5" y="2273.5"/>
+            <point key="canvasLocation" x="319.5" y="2271.5"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="TNa-TU-QI6">
@@ -117,7 +234,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="lfs-Rq-gbp" kind="relationship" relationship="viewControllers" id="nsM-HM-BUZ"/>
-                        <segue destination="3fj-gN-cc2" kind="relationship" relationship="viewControllers" id="6AY-yd-hrT"/>
+                        <segue destination="YVb-aC-CbJ" kind="relationship" relationship="viewControllers" id="LsG-jO-P9K"/>
                         <segue destination="EnF-O1-Ga9" kind="relationship" relationship="viewControllers" id="zFm-g2-bFP"/>
                         <segue destination="46C-7T-Ec9" kind="relationship" relationship="viewControllers" id="71w-Km-909"/>
                         <segue destination="NDk-tb-gmz" kind="relationship" relationship="viewControllers" id="if6-js-NvY"/>

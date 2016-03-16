@@ -12,6 +12,14 @@
 		054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6121C8F19F9004BEEB4 /* Assets.xcassets */; };
 		054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
+		C0D8CD551C9325AA00981788 /* ChallengesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */; };
+		C0D8CD5B1C96F4FF00981788 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5A1C96F4FF00981788 /* myCell.swift */; };
+		C0D8CD5D1C97013A00981788 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5C1C97013A00981788 /* Foo.swift */; };
+		C0D8CD5F1C97045A00981788 /* lala.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0D8CD5E1C97045A00981788 /* lala.jpg */; };
+		C0D8CD611C971DB200981788 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD601C971DB200981788 /* DetailVC.swift */; };
+		C0D8CD631C97340900981788 /* AchievementsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD621C97340900981788 /* AchievementsTableVC.swift */; };
+		C0D8CD671C9841C800981788 /* DetailAchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD661C9841C800981788 /* DetailAchievementsVC.swift */; };
+		C0D8CD691C98429100981788 /* myAchievementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD681C98429100981788 /* myAchievementsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		054FA6151C8F19F9004BEEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054FA6171C8F19F9004BEEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesTableVC.swift; sourceTree = "<group>"; };
+		C0D8CD5A1C96F4FF00981788 /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		C0D8CD5C1C97013A00981788 /* Foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		C0D8CD5E1C97045A00981788 /* lala.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lala.jpg; path = ../../../../../Downloads/lala.jpg; sourceTree = "<group>"; };
+		C0D8CD601C971DB200981788 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		C0D8CD621C97340900981788 /* AchievementsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsTableVC.swift; sourceTree = "<group>"; };
+		C0D8CD661C9841C800981788 /* DetailAchievementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAchievementsVC.swift; sourceTree = "<group>"; };
+		C0D8CD681C98429100981788 /* myAchievementsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAchievementsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +72,28 @@
 			children = (
 				054FA60B1C8F19F8004BEEB4 /* AppDelegate.swift */,
 				05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */,
+				C0D8CD881C99585900981788 /* C&A */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
 				054FA6121C8F19F9004BEEB4 /* Assets.xcassets */,
 				054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */,
 				054FA6171C8F19F9004BEEB4 /* Info.plist */,
+				C0D8CD5E1C97045A00981788 /* lala.jpg */,
 			);
 			path = workout;
+			sourceTree = "<group>";
+		};
+		C0D8CD881C99585900981788 /* C&A */ = {
+			isa = PBXGroup;
+			children = (
+				C0D8CD5C1C97013A00981788 /* Foo.swift */,
+				C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */,
+				C0D8CD5A1C96F4FF00981788 /* myCell.swift */,
+				C0D8CD601C971DB200981788 /* DetailVC.swift */,
+				C0D8CD621C97340900981788 /* AchievementsTableVC.swift */,
+				C0D8CD681C98429100981788 /* myAchievementsCell.swift */,
+				C0D8CD661C9841C800981788 /* DetailAchievementsVC.swift */,
+			);
+			name = "C&A";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D8CD5F1C97045A00981788 /* lala.jpg in Resources */,
 				054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */,
 				054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */,
 				054FA6111C8F19F9004BEEB4 /* Main.storyboard in Resources */,
@@ -136,8 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D8CD691C98429100981788 /* myAchievementsCell.swift in Sources */,
 				05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */,
+				C0D8CD5B1C96F4FF00981788 /* myCell.swift in Sources */,
+				C0D8CD5D1C97013A00981788 /* Foo.swift in Sources */,
 				054FA60C1C8F19F8004BEEB4 /* AppDelegate.swift in Sources */,
+				C0D8CD631C97340900981788 /* AchievementsTableVC.swift in Sources */,
+				C0D8CD671C9841C800981788 /* DetailAchievementsVC.swift in Sources */,
+				C0D8CD551C9325AA00981788 /* ChallengesTableVC.swift in Sources */,
+				C0D8CD611C971DB200981788 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
