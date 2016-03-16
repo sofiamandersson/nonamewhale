@@ -8,8 +8,19 @@
 
 import Foundation
 
-class LeaderbordItem {
+class LeaderboardItem {
     
+    var rankLeaderboard = ""
+    var nameLeaderboard = ""
+    var pointsLeaderboard = ""
+    
+    init (rankLeaderboard: String, nameLeaderboard: String, pointsLeaderboard: String) {
+        
+        self.rankLeaderboard = rankLeaderboard
+        self.nameLeaderboard = nameLeaderboard
+        self.pointsLeaderboard = pointsLeaderboard
+        
+    }
    
     
 }
