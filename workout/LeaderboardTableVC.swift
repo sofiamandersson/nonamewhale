@@ -22,6 +22,18 @@ class LeaderboardTableVC: UITableViewController {
         let person5 = LeaderboardItem(rankLeaderboard: "5", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
         let person6 = LeaderboardItem(rankLeaderboard: "6", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
         let person7 = LeaderboardItem(rankLeaderboard: "7", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person8 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person9 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person10 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person11 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person12 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person13 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person14 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person15 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person16 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        let person17 = LeaderboardItem(rankLeaderboard: "8", nameLeaderboard: "Sofia Andersson", pointsLeaderboard: "245")
+        
+        
         
         leaderboardArray.append(person1)
         leaderboardArray.append(person2)
@@ -30,6 +42,16 @@ class LeaderboardTableVC: UITableViewController {
         leaderboardArray.append(person5)
         leaderboardArray.append(person6)
         leaderboardArray.append(person7)
+        leaderboardArray.append(person8)
+        leaderboardArray.append(person9)
+        leaderboardArray.append(person10)
+        leaderboardArray.append(person11)
+        leaderboardArray.append(person12)
+        leaderboardArray.append(person13)
+        leaderboardArray.append(person14)
+        leaderboardArray.append(person15)
+        leaderboardArray.append(person16)
+        leaderboardArray.append(person17)
 
         
     }
@@ -54,6 +76,9 @@ class LeaderboardTableVC: UITableViewController {
         cell.cellRank.text = leaderboardItem.rankLeaderboard
         cell.cellName.text = leaderboardItem.nameLeaderboard
         cell.cellPoints.text = leaderboardItem.pointsLeaderboard
+        
+        let currentColor = greenColors[indexPath.row % greenColors.count]
+        cell.contentView.backgroundColor = currentColor
 
         
 
