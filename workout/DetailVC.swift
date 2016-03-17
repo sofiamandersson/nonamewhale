@@ -20,6 +20,10 @@ class DetailVC: UIViewController {
     var descripionLabel = ""
     var moreInfoDetail = ""
     
+    @IBAction func backButton(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
