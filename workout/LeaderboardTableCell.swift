@@ -12,6 +12,10 @@ class LeaderboardTableCell: UITableViewCell {
 
     @IBOutlet weak var cellRank: UILabel!
     @IBOutlet weak var cellName: UILabel!
+    
     @IBOutlet weak var cellPoints: UILabel!
+    @IBOutlet weak var cellTrophy: UILabel!
+    
+    
     
 }

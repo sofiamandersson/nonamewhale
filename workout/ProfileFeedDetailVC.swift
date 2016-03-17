@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileFeedDetailVC: UIViewController {
     
+    @IBOutlet weak var navBar: UINavigationBar!
 
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var detailImage: UIImageView!
@@ -29,6 +30,10 @@ class ProfileFeedDetailVC: UIViewController {
         detailImage.image = UIImage(named: imageDetail)
         detailGraph.image = UIImage(named: graphDetail)
         detailDate.text = dateDetail
+        
+        self.navBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navBar.shadowImage = UIImage()
+        self.navBar.translucent = true
         
     }
 
