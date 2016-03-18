@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class LeaderboardTableVC: UITableViewController {
     
     var leaderboardArray: [LeaderboardItem] = [LeaderboardItem]()
@@ -77,6 +79,9 @@ class LeaderboardTableVC: UITableViewController {
         cell.cellName.text = leaderboardItem.nameLeaderboard
         cell.cellTrophy.text = leaderboardItem.trophysLeaderboard
         cell.cellPoints.text = leaderboardItem.pointsLeaderboard
+        
+        
+        
         
         let currentColor = greenColors[indexPath.row % greenColors.count]
         cell.contentView.backgroundColor = currentColor

@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import QuartzCore
 
 class LeaderboardTableCell: UITableViewCell {
 
     @IBOutlet weak var cellRank: UILabel!
     @IBOutlet weak var cellName: UILabel!
+    @IBOutlet weak var cellRankImage: UILabel!
     
     @IBOutlet weak var cellPoints: UILabel!
     @IBOutlet weak var cellTrophy: UILabel!
+    
+
+
+//    self.cellRankImage.layer.cornerRadius = self.cellRankImage.frame.size.width / 2
+//    self.cellRankImage.clipsToBounds = true
     
     
     
