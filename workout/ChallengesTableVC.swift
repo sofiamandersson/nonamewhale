@@ -32,7 +32,7 @@ class ChallengesTableVC: UITableViewController {
         fooArray.append(foo4)
         
         //row height
-        self.tableView.rowHeight = 60.0
+        self.tableView.rowHeight = 80.0
         
         
 
@@ -60,8 +60,13 @@ class ChallengesTableVC: UITableViewController {
 
         let fooItem = fooArray[indexPath.row]
         
+        // IMAGES AND TEXT
         cell.myImageView.image = UIImage(named: fooItem.imageName)
         cell.myLabel.text = fooItem.description
+        
+        // COLORS
+        let currentColor = greenColors[indexPath.row % greenColors.count]
+        cell.contentView.backgroundColor = currentColor
 
         return cell
     }

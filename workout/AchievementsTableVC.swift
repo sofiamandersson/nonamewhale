@@ -25,11 +25,8 @@ class AchievementsTableVC: UITableViewController {
         fooArray.append(foo3)
         fooArray.append(foo4)
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // row height
+        self.tableView.rowHeight = 112.0
         
         
     }
@@ -59,7 +56,15 @@ class AchievementsTableVC: UITableViewController {
         let fooItem = fooArray[indexPath.row]
         
         cell.myImageView.image = UIImage(named: fooItem.imageName)
+
+        //  try to make Images round
+//        cell.myImageView.layer.cornerRadius = 8.0
+//        cell.myImageView.clipsToBounds = true
+        
         cell.myLabel.text = fooItem.description
+        
+        // COLORS
+        //cell.contentView.backgroundColor = greenColors.mediumLight
         
         return cell
     }
