@@ -12,9 +12,9 @@
 		054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6121C8F19F9004BEEB4 /* Assets.xcassets */; };
 		054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
+		C0900F3D1C9C07D100F0945A /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5C1C97013A00981788 /* Foo.swift */; };
 		C0D8CD551C9325AA00981788 /* ChallengesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */; };
 		C0D8CD5B1C96F4FF00981788 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5A1C96F4FF00981788 /* myCell.swift */; };
-		C0D8CD5D1C97013A00981788 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5C1C97013A00981788 /* Foo.swift */; };
 		C0D8CD5F1C97045A00981788 /* lala.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0D8CD5E1C97045A00981788 /* lala.jpg */; };
 		C0D8CD611C971DB200981788 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD601C971DB200981788 /* DetailVC.swift */; };
 		C0D8CD631C97340900981788 /* AchievementsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD621C97340900981788 /* AchievementsTableVC.swift */; };
@@ -174,9 +174,9 @@
 			files = (
 				C0D8CD8A1C9B1E4300981788 /* CreateChallengeVC.swift in Sources */,
 				C0D8CD691C98429100981788 /* myAchievementsCell.swift in Sources */,
+				C0900F3D1C9C07D100F0945A /* Foo.swift in Sources */,
 				05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */,
 				C0D8CD5B1C96F4FF00981788 /* myCell.swift in Sources */,
-				C0D8CD5D1C97013A00981788 /* Foo.swift in Sources */,
 				054FA60C1C8F19F8004BEEB4 /* AppDelegate.swift in Sources */,
 				C0D8CD631C97340900981788 /* AchievementsTableVC.swift in Sources */,
 				C0D8CD671C9841C800981788 /* DetailAchievementsVC.swift in Sources */,
