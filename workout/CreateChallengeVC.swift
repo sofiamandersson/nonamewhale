@@ -1,38 +1,23 @@
 //
-//  DetailVC.swift
+//  CreateChallengeVC.swift
 //  workout
 //
-//  Created by Gabriel Kroll on 14/03/16.
+//  Created by Gabriel Kroll on 17/03/16.
 //  Copyright © 2016 Sofia M Andersson. All rights reserved.
 //
 
 import UIKit
 
-class DetailVC: UIViewController {
-
-    @IBOutlet weak var detailImage: UIImageView!
+class CreateChallengeVC: UIViewController {
     
-    @IBOutlet weak var detailLabel: UILabel!
-    
-    @IBOutlet weak var moreInfoLabel: UILabel!
-    
-    var imageDetail = ""
-    var descripionLabel = ""
-    var moreInfoDetail = ""
-    
-
-    
-    @IBAction func backButton(sender: AnyObject) {
+    @IBAction func doneButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion:{})
     }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        detailImage.image = UIImage(named: imageDetail)
-        detailLabel.text = descripionLabel
-        moreInfoLabel.text = moreInfoDetail
-        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

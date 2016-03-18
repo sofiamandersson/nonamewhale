@@ -30,6 +30,11 @@ class ChallengesTableVC: UITableViewController {
         fooArray.append(foo2)
         fooArray.append(foo3)
         fooArray.append(foo4)
+        
+        //row height
+        self.tableView.rowHeight = 60.0
+        
+        
 
     }
 

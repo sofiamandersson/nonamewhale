@@ -39,6 +39,20 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Ivv-Um-E0h">
+                            <rect key="frame" x="0.0" y="249.5" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTI-Bi-kIh">
+                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
+                                    <state key="normal" title="Create Challenge"/>
+                                    <connections>
+                                        <segue destination="gkz-QX-hxG" kind="show" id="lca-R5-W2y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChallengesCell" rowHeight="60" id="8Zf-lu-MnB" customClass="myCell" customModule="workout" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="111.5" width="375" height="60"/>
@@ -135,8 +149,7 @@
                                     <navigationItem title="Title" id="CEm-Yv-5M1">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="OVX-LN-yE4">
                                             <connections>
-                                                <action selector="backButton:" destination="nGC-r2-duB" id="Tbc-F4-0rm"/>
-                                                <segue destination="YVb-aC-CbJ" kind="custom" id="UfC-mh-Aks"/>
+                                                <action selector="backButton:" destination="nGC-r2-duB" id="NHZ-ug-Cnf"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -154,7 +167,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1s-ht-Npy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1003.5" y="-84.5"/>
+            <point key="canvasLocation" x="891.5" y="-459.5"/>
+        </scene>
+        <!--Create ChallengeVC-->
+        <scene sceneID="zND-5X-lQB">
+            <objects>
+                <viewController id="gkz-QX-hxG" customClass="CreateChallengeVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FPd-bz-6Ui"/>
+                        <viewControllerLayoutGuide type="bottom" id="KWe-gg-dnT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i1a-QO-gYb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GH4-pa-OjK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Create Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-h4-nKi">
+                                <rect key="frame" x="121" y="360" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbJ-xn-09c">
+                                <rect key="frame" x="169" y="533" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="gkz-QX-hxG" eventType="touchUpInside" id="Z5z-PF-qSf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TlB-h4-nKi" firstAttribute="top" secondItem="GH4-pa-OjK" secondAttribute="bottom" constant="-258" id="CFp-LT-ejA"/>
+                            <constraint firstItem="GH4-pa-OjK" firstAttribute="leading" secondItem="TlB-h4-nKi" secondAttribute="trailing" constant="-253" id="TaD-wu-RjM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Fv-XG-XNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891.5" y="282.5"/>
         </scene>
         <!--Add-->
         <scene sceneID="Zzw-PV-Mec">
@@ -259,7 +313,4 @@
             <point key="canvasLocation" x="-534.5" y="45.5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="UfC-mh-Aks"/>
-    </inferredMetricsTieBreakers>
 </document>
