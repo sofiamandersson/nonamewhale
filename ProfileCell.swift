@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ProfileTableRightCell: UITableViewCell {
+class ProfileCell: UITableViewCell {
     
     @IBOutlet weak var rightCellLabel: UILabel!
-    @IBOutlet weak var rightCellImage: UIImageView!
 
 }

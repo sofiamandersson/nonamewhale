@@ -44,29 +44,16 @@ class ProfileTableVC: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if indexPath.row % 2 == 0 {
-        
-            let cell = tableView.dequeueReusableCellWithIdentifier("RightCell", forIndexPath: indexPath) as! ProfileTableRightCell
-
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
+            
             let feedItem = workoutFeedArray[indexPath.row]
-        
+            
             cell.rightCellLabel.text = feedItem.labelProfileFeed
-            cell.rightCellImage.image = UIImage(named: feedItem.imageProfileFeed)
+            
+            
+            return cell
         
-
-            return cell
-        } else {
-            
-            let cell = tableView.dequeueReusableCellWithIdentifier("LeftCell", forIndexPath: indexPath) as! ProfileTableLeftCell
-            
-            let feedItem = workoutFeedArray[indexPath.row]
-            
-            cell.leftCellLabel.text = feedItem.labelProfileFeed
-            cell.leftCellImage.image = UIImage(named: feedItem.imageProfileFeed)
-            
-            
-            return cell
-        }
     }//end of cell function
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

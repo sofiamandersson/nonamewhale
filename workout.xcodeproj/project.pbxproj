@@ -12,8 +12,7 @@
 		054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6121C8F19F9004BEEB4 /* Assets.xcassets */; };
 		054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */; };
 		0582A2951C96BAC400801B7D /* WorkoutFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */; };
-		0582A2991C96BF0300801B7D /* ProfileTableRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */; };
-		0582A29B1C96BF1900801B7D /* ProfileTableLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */; };
+		0582A2991C96BF0300801B7D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0582A2981C96BF0300801B7D /* ProfileCell.swift */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
 		05D7802A1C9739E0003D5E88 /* ProfileFeedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */; };
 		05EDD6571C9945A300D1B13B /* LeaderboardTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDD6561C9945A300D1B13B /* LeaderboardTableVC.swift */; };
@@ -32,8 +31,7 @@
 		054FA6151C8F19F9004BEEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054FA6171C8F19F9004BEEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedItem.swift; sourceTree = "<group>"; };
-		0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableRightCell.swift; path = ../ProfileTableRightCell.swift; sourceTree = "<group>"; };
-		0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableLeftCell.swift; path = ../ProfileTableLeftCell.swift; sourceTree = "<group>"; };
+		0582A2981C96BF0300801B7D /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileCell.swift; path = ../ProfileCell.swift; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFeedDetailVC.swift; sourceTree = "<group>"; };
 		05EDD6561C9945A300D1B13B /* LeaderboardTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableVC.swift; sourceTree = "<group>"; };
@@ -90,8 +88,7 @@
 		0582A29C1C96C04400801B7D /* ProfileFeed */ = {
 			isa = PBXGroup;
 			children = (
-				0582A2981C96BF0300801B7D /* ProfileTableRightCell.swift */,
-				0582A29A1C96BF1900801B7D /* ProfileTableLeftCell.swift */,
+				0582A2981C96BF0300801B7D /* ProfileCell.swift */,
 				0582A2941C96BAC400801B7D /* WorkoutFeedItem.swift */,
 			);
 			name = ProfileFeed;
@@ -191,13 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */,
-				0582A2991C96BF0300801B7D /* ProfileTableRightCell.swift in Sources */,
+				0582A2991C96BF0300801B7D /* ProfileCell.swift in Sources */,
 				0582A2951C96BAC400801B7D /* WorkoutFeedItem.swift in Sources */,
 				05F9FA5D1C930AF100D8261D /* ProfileTableVC.swift in Sources */,
 				05EDD65D1C994CF700D1B13B /* LeaderboardTableCell.swift in Sources */,
 				054FA60C1C8F19F8004BEEB4 /* AppDelegate.swift in Sources */,
 				05D7802A1C9739E0003D5E88 /* ProfileFeedDetailVC.swift in Sources */,
-				0582A29B1C96BF1900801B7D /* ProfileTableLeftCell.swift in Sources */,
 				05F9FA4F1C92F8B100D8261D /* TrophyVC.swift in Sources */,
 				05EDD6591C9946AC00D1B13B /* LeaderbordItem.swift in Sources */,
 				05EDD65F1C996B9200D1B13B /* GreenColorArray.swift in Sources */,
