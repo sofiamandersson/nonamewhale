@@ -1,5 +1,5 @@
 //
-//  Foo.swift
+//  ChallengesContent.swift
 //  workout
 //
 //  Created by Gabriel Kroll on 14/03/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Foo {
+class ChallengesContent {
     var imageName = ""
     var description = ""
     var moreInfo = ""

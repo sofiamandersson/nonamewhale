@@ -16,15 +16,15 @@ class ChallengesTableVC: UITableViewController {
         self.tableView.reloadData()
     }
 
-    var fooArray: [Foo] = [Foo]()
+    var fooArray: [ChallengesContent] = [ChallengesContent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let foo1 = Foo(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
-        let foo2 = Foo(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
-        let foo3 = Foo(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
-        let foo4 = Foo(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
+        let foo1 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
+        let foo2 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
+        let foo3 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
+        let foo4 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
         
         fooArray.append(foo1)
         fooArray.append(foo2)

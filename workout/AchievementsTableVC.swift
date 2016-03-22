@@ -10,20 +10,20 @@ import UIKit
 
 class AchievementsTableVC: UITableViewController {
     
-    var fooArray: [Foo] = [Foo]()
+    var contentArray: [ChallengesContent] = [ChallengesContent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let foo1 = Foo(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
-        let foo2 = Foo(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
-        let foo3 = Foo(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
-        let foo4 = Foo(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
+        let contentArray1 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
+        let contentArray2 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
+        let contentArray3 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
+        let contentArray4 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
         
-        fooArray.append(foo1)
-        fooArray.append(foo2)
-        fooArray.append(foo3)
-        fooArray.append(foo4)
+        contentArray.append(contentArray1)
+        contentArray.append(contentArray2)
+        contentArray.append(contentArray3)
+        contentArray.append(contentArray4)
         
         // row height
         self.tableView.rowHeight = 112.0
@@ -47,13 +47,13 @@ class AchievementsTableVC: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return fooArray.count
+        return contentArray.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! myCell
         
-        let fooItem = fooArray[indexPath.row]
+        let fooItem = contentArray[indexPath.row]
         
         cell.myImageView.image = UIImage(named: fooItem.imageName)
 
@@ -70,7 +70,7 @@ class AchievementsTableVC: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let fooSelected = fooArray[indexPath.row]
+        let fooSelected = contentArray[indexPath.row]
         let detailVC: DetailVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetailAchievementsViewController") as! DetailVC
         
         detailVC.imageDetail = fooSelected.imageName
