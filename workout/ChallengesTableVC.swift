@@ -16,20 +16,20 @@ class ChallengesTableVC: UITableViewController {
         self.tableView.reloadData()
     }
 
-    var fooArray: [ChallengesContent] = [ChallengesContent]()
+    var contentArray: [ChallengesContent] = [ChallengesContent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let foo1 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
-        let foo2 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
-        let foo3 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
-        let foo4 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
+        let content1 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
+        let content2 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
+        let content3 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
+        let content4 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
         
-        fooArray.append(foo1)
-        fooArray.append(foo2)
-        fooArray.append(foo3)
-        fooArray.append(foo4)
+        contentArray.append(content1)
+        contentArray.append(content2)
+        contentArray.append(content3)
+        contentArray.append(content4)
         
         //row height
         self.tableView.rowHeight = 80.0
@@ -49,7 +49,7 @@ class ChallengesTableVC: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return fooArray.count
+        return contentArray.count
     }
     
     // ChallengeCell to right Prototype Cell
@@ -58,7 +58,7 @@ class ChallengesTableVC: UITableViewController {
         let reuseIdentifier = cellIdentiferBasedOnSelectedType()
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! myCell
 
-        let fooItem = fooArray[indexPath.row]
+        let fooItem = contentArray[indexPath.row]
         
         // IMAGES AND TEXT
         cell.myImageView.image = UIImage(named: fooItem.imageName)
@@ -81,7 +81,7 @@ class ChallengesTableVC: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let fooSelected = fooArray[indexPath.row]
+        let fooSelected = contentArray[indexPath.row]
         let detailVC: DetailVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailVC
         
         detailVC.imageDetail = fooSelected.imageName
