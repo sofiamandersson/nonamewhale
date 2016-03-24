@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ProfileTableVC: UITableViewController {
+class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
  
     @IBOutlet weak var largeProfileImage: UIImageView!
     
@@ -17,53 +19,47 @@ class ProfileTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.largeProfileImage.layer.cornerRadius = self.largeProfileImage.frame.size.width / 2
-        self.largeProfileImage.clipsToBounds = true
+
         
-        let feed1 = WorkoutFeedItem(labelProfileFeed: "Ran 10km", imageProfileFeed: "ran.jpg", graphProfileFeed: "graph1.png", dateProfileFeed: "15/3-2016")
-        let feed2 = WorkoutFeedItem(labelProfileFeed: "Cycled 20km", imageProfileFeed: "cycled.jpg", graphProfileFeed: "graph2.png", dateProfileFeed: "13/3-2016")
-        let feed3 = WorkoutFeedItem(labelProfileFeed: "Swam 10km", imageProfileFeed: "swam.jpg", graphProfileFeed: "graph2.png", dateProfileFeed: "9/3-2016")
-        let feed4 = WorkoutFeedItem(labelProfileFeed: "Ran 5km", imageProfileFeed: "ran.jpg", graphProfileFeed: "graph1.png", dateProfileFeed: "5/3-2016")
+        workoutFeedArray = ProfileDataGenerator.generateProfileData()
         
-        workoutFeedArray.append(feed1)
-        workoutFeedArray.append(feed2)
-        workoutFeedArray.append(feed3)
-        workoutFeedArray.append(feed4)
-        
-        self.tableView.rowHeight = 150.0
+        self.tableView.rowHeight = 80.0
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workoutFeedArray.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
             
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
             
             let feedItem = workoutFeedArray[indexPath.row]
             
-            cell.rightCellLabel.text = feedItem.labelProfileFeed
-            
+            cell.dateLabel.text = feedItem.dateProfileFeed
+            cell.headlineLabel.text = feedItem.headlineProfileFeed
+        
+            let currentColor = greyColorArray[indexPath.row % greyColorArray.count]
+            cell.contentView.backgroundColor = currentColor
+        
             
             return cell
         
     }//end of cell function
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let feedItemDetail = workoutFeedArray[indexPath.row]
         let feedItemSelected:ProfileFeedDetailVC = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileFeedDetailVC") as! ProfileFeedDetailVC
         
         feedItemSelected.imageDetail = feedItemDetail.imageProfileFeed
         feedItemSelected.labelDetail = feedItemDetail.labelProfileFeed
-        feedItemSelected.graphDetail = feedItemDetail.graphProfileFeed
         feedItemSelected.dateDetail = feedItemDetail.dateProfileFeed
         
         

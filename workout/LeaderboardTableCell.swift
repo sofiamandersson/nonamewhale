@@ -18,8 +18,13 @@ class LeaderboardTableCell: UITableViewCell {
     @IBOutlet weak var cellPoints: UILabel!
     @IBOutlet weak var cellTrophy: UILabel!
     
-
-
+    @IBOutlet weak var rankImage: UIImageView!
+    @IBOutlet weak var pointsImage: UIImageView!
+    
+    
+    
+    
+    
 //    self.cellRankImage.layer.cornerRadius = self.cellRankImage.frame.size.width / 2
 //    self.cellRankImage.clipsToBounds = true
     

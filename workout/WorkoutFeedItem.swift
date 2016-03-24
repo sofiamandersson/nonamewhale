@@ -10,16 +10,16 @@ import Foundation
 
 class WorkoutFeedItem {
     
+    var headlineProfileFeed = ""
     var labelProfileFeed = ""
     var imageProfileFeed = ""
-    var graphProfileFeed = ""
     var dateProfileFeed = ""
     
-    init (labelProfileFeed: String, imageProfileFeed: String, graphProfileFeed: String, dateProfileFeed: String) {
+    init (headlineProfileFeed: String, labelProfileFeed: String, imageProfileFeed: String, dateProfileFeed: String) {
         
+        self.headlineProfileFeed = headlineProfileFeed
         self.labelProfileFeed = labelProfileFeed
         self.imageProfileFeed = imageProfileFeed
-        self.graphProfileFeed = graphProfileFeed
         self.dateProfileFeed = dateProfileFeed
         
     }

@@ -14,12 +14,10 @@ class ProfileFeedDetailVC: UIViewController {
 
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var detailImage: UIImageView!
-    @IBOutlet weak var detailGraph: UIImageView!
     @IBOutlet weak var detailDate: UILabel!
     
     var labelDetail = ""
     var imageDetail = ""
-    var graphDetail = ""
     var dateDetail = ""
     
 
@@ -28,7 +26,6 @@ class ProfileFeedDetailVC: UIViewController {
 
         detailLabel.text = labelDetail
         detailImage.image = UIImage(named: imageDetail)
-        detailGraph.image = UIImage(named: graphDetail)
         detailDate.text = dateDetail
         
         self.navBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
