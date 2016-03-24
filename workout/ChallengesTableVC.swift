@@ -10,6 +10,8 @@ import UIKit
 
 class ChallengesTableVC: UITableViewController {
     
+    let kChallengesCellHeight: CGFloat = 80.0
+    let kAchievementsCellHeight: CGFloat = 112.0
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBAction func segmentedControllChellangesAchievements(sender: AnyObject) {
@@ -31,11 +33,10 @@ class ChallengesTableVC: UITableViewController {
         contentArray.append(content3)
         contentArray.append(content4)
         
-        //row height
-        self.tableView.rowHeight = 80.0
-        
-        
-
+        //Needs constraints for cells
+        //self.tableView.estimatedRowHeight = 80.0
+        //
+        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
 
@@ -89,5 +90,13 @@ class ChallengesTableVC: UITableViewController {
         detailVC.moreInfoDetail = fooSelected.moreInfo
         
         self.presentViewController(detailVC, animated: true, completion: nil)
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if segmentedControl.selectedSegmentIndex == 0 {
+            return kChallengesCellHeight
+        } else {
+            return kAchievementsCellHeight
+        }
     }
 }
