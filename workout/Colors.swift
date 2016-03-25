@@ -10,11 +10,12 @@ import Foundation
 import UIKit
 
 
-    let darkest = UIColor(red: 24/255.0, green: 176/255.0, blue: 81/255.0, alpha: 1.0)
-    let mediumDark = UIColor(red: 46/255.0, green: 199/255.0, blue: 104/255.0, alpha: 1.0)
-    let mediumLight = UIColor(red: 63/255.0, green: 211/255.0, blue: 116/255.0, alpha: 1.0)
-    let light = UIColor(red: 83/255.0, green: 225/255.0, blue: 135/255.0, alpha: 1.0)
-    
+    let darkest = UIColor(red: 50/255.0, green: 153/255.0, blue: 187/255.0, alpha: 1.0)
+    let medium = UIColor(red: 64/255.0, green: 164/255.0, blue: 197/255.0, alpha: 1.0)
+    let light = UIColor(red: 78/255.0, green: 175/255.0, blue: 207/255.0, alpha: 1.0)
+
+    let orange = UIColor(red: 255/255.0, green: 153/255.0, blue: 0/255.0, alpha: 1.0)
+
     
 
-    var greenColors = [darkest, mediumDark, mediumLight, light, mediumLight, mediumDark]
+    var greenColors = [darkest, medium, light, medium]

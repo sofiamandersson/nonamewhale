@@ -33,10 +33,10 @@ class ChallengesTableVC: UITableViewController {
         contentArray.append(content3)
         contentArray.append(content4)
         
-        //Needs constraints for cells
-        //self.tableView.estimatedRowHeight = 80.0
-        //
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+//        Needs constraints for cells
+//        self.tableView.estimatedRowHeight = 80.0
+//        
+//        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
 
@@ -59,11 +59,11 @@ class ChallengesTableVC: UITableViewController {
         let reuseIdentifier = cellIdentiferBasedOnSelectedType()
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! myCell
 
-        let fooItem = contentArray[indexPath.row]
+//        let fooItem = contentArray[indexPath.row]
         
         // IMAGES AND TEXT
-        cell.myImageView.image = UIImage(named: fooItem.imageName)
-        cell.myLabel.text = fooItem.description
+//        cell.myImageView.image = UIImage(named: fooItem.imageName)
+//        cell.myLabel.text = fooItem.description
         
         // COLORS
         let currentColor = greenColors[indexPath.row % greenColors.count]

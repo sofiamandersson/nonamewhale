@@ -12,6 +12,7 @@
 		054FA6131C8F19F9004BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6121C8F19F9004BEEB4 /* Assets.xcassets */; };
 		054FA6161C8F19F9004BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054FA6141C8F19F9004BEEB4 /* LaunchScreen.storyboard */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
+		C0742E561CA43B86005723C2 /* TabBarBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0742E551CA43B86005723C2 /* TabBarBackground.swift */; };
 		C0900F3D1C9C07D100F0945A /* ChallengesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */; };
 		C0900F3F1C9C0BE600F0945A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0900F3E1C9C0BE600F0945A /* Colors.swift */; };
 		C0D8CD551C9325AA00981788 /* ChallengesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */; };
@@ -32,6 +33,7 @@
 		054FA6151C8F19F9004BEEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054FA6171C8F19F9004BEEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C0742E551CA43B86005723C2 /* TabBarBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarBackground.swift; sourceTree = "<group>"; };
 		C0900F3E1C9C0BE600F0945A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesTableVC.swift; sourceTree = "<group>"; };
 		C0D8CD5A1C96F4FF00981788 /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		C0D8CD881C99585900981788 /* C&A */ = {
 			isa = PBXGroup;
 			children = (
+				C0742E551CA43B86005723C2 /* TabBarBackground.swift */,
 				C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */,
 				C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */,
 				C0D8CD5A1C96F4FF00981788 /* myCell.swift */,
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D8CD8A1C9B1E4300981788 /* CreateChallengeVC.swift in Sources */,
+				C0742E561CA43B86005723C2 /* TabBarBackground.swift in Sources */,
 				C0900F3F1C9C0BE600F0945A /* Colors.swift in Sources */,
 				C0D8CD691C98429100981788 /* myAchievementsCell.swift in Sources */,
 				C0900F3D1C9C07D100F0945A /* ChallengesContent.swift in Sources */,
