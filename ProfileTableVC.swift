@@ -67,6 +67,7 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.presentViewController(feedItemSelected, animated: true, completion: nil)
         
+    
         
         
     }// end of didSelectRowAtIndexPath

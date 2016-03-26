@@ -24,7 +24,7 @@ class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewData
         
         
         
-        leaderboardArray = LeaderboardDataGenerator.generateProfileData()
+        leaderboardArray = LeaderboardDataGenerator.generateLeaderboardData()
     
 
         

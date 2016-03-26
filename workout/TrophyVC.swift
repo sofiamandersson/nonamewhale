@@ -25,8 +25,13 @@ class TrophyVC: UIViewController {
 
     @IBAction func dismissBtn(sender: UIBarButtonItem) {
         
-        self.dismissViewControllerAnimated(true, completion:{})
+        //self.dismissViewControllerAnimated(true, completion:{})
         
+        self.dismissViewControllerAnimated(false, completion: {})
+        
+        
+        //        In the animationControllerForPresentedController set presenting to be true, and in animationControllerForDismissedController set it to be false.
     }
 
 }
+

@@ -10,12 +10,12 @@ import UIKit
 
 class LeaderboardDataGenerator: NSObject {
     
-    static func generateProfileData() -> [LeaderboardItem] {
+    static func generateLeaderboardData() -> [LeaderboardItem] {
     
         let person1 = LeaderboardItem(rankLeaderboard: "1", nameLeaderboard: "ericasvensson", trophysLeaderboard: "2", pointsLeaderboard: "402")
         let person2 = LeaderboardItem(rankLeaderboard: "2", nameLeaderboard: "biker87", trophysLeaderboard: "3", pointsLeaderboard: "395")
         let person3 = LeaderboardItem(rankLeaderboard: "3", nameLeaderboard: "JanZeito", trophysLeaderboard: "4", pointsLeaderboard: "356")
-        let person4 = LeaderboardItem(rankLeaderboard: "4", nameLeaderboard: "HannaRunner", trophysLeaderboard: "6", pointsLeaderboard: "330")
+        let person4 = LeaderboardItem(rankLeaderboard: "4", nameLeaderboard: "Me", trophysLeaderboard: "6", pointsLeaderboard: "330")
         let person5 = LeaderboardItem(rankLeaderboard: "5", nameLeaderboard: "graffic34", trophysLeaderboard: "7", pointsLeaderboard: "328")
         let person6 = LeaderboardItem(rankLeaderboard: "6", nameLeaderboard: "michelle90", trophysLeaderboard: "2", pointsLeaderboard: "316")
         let person7 = LeaderboardItem(rankLeaderboard: "7", nameLeaderboard: "AKfrost", trophysLeaderboard: "2", pointsLeaderboard: "294")
