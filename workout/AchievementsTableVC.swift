@@ -15,7 +15,7 @@ class AchievementsTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let contentArray1 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
+        let contentArray1 = ChallengesContent(imageName: "imageprofile1.png", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
         let contentArray2 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
         let contentArray3 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
         let contentArray4 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
@@ -26,7 +26,7 @@ class AchievementsTableVC: UITableViewController {
         contentArray.append(contentArray4)
         
         // row height
-        self.tableView.rowHeight = 112.0
+        //self.tableView.rowHeight = 112.0
         
         
     }
@@ -69,16 +69,7 @@ class AchievementsTableVC: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let fooSelected = contentArray[indexPath.row]
-        let detailVC: DetailVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetailAchievementsViewController") as! DetailVC
-        
-        detailVC.imageDetail = fooSelected.imageName
-        detailVC.descripionLabel = fooSelected.description
-        detailVC.moreInfoDetail = fooSelected.moreInfo
-        
-        self.presentViewController(detailVC, animated: true, completion: nil)
-    }
+    
 }
 
 

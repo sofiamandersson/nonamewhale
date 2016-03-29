@@ -12,9 +12,11 @@ class ChallengesTableVC: UITableViewController {
     
     let kChallengesCellHeight: CGFloat = 80.0
     let kAchievementsCellHeight: CGFloat = 112.0
-
+    
+    @IBOutlet weak var createChallengeFooterView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBAction func segmentedControllChellangesAchievements(sender: AnyObject) {
+        createChallengeFooterView.hidden = segmentedControl.selectedSegmentIndex != 0
         self.tableView.reloadData()
     }
 
@@ -23,10 +25,10 @@ class ChallengesTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let content1 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi", moreInfo: "Boo - lalalalalalaaalaaa")
-        let content2 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS", moreInfo: "YAAAS YAAS YAAAS")
-        let content3 = ChallengesContent(imageName: "lala.jpg", desc: "Tipsi2", moreInfo: "Boo - lala2lalalal2aaalaaa")
-        let content4 = ChallengesContent(imageName: "lala.jpg", desc: "YAAAAS2", moreInfo: "YAAA2S YAAS YAAA2S2222")
+        let content1 = ChallengesContent(imageName: "profileimage1.png", desc: "PerLien", moreInfo: "Boo - lalalalalalaaalaaa")
+        let content2 = ChallengesContent(imageName: "profileimage2.png", desc: "Karlsson", moreInfo: "YAAAS YAAS YAAAS")
+        let content3 = ChallengesContent(imageName: "profileimage3.png", desc: "michelle90", moreInfo: "Boo - lala2lalalal2aaalaaa")
+        let content4 = ChallengesContent(imageName: "profileimage4.png", desc: "krollanders", moreInfo: "YAAA2S YAAS YAAA2S2222")
         
         contentArray.append(content1)
         contentArray.append(content2)
@@ -79,17 +81,6 @@ class ChallengesTableVC: UITableViewController {
             case 1: return "AchievementsCell"
             default: return ""
         }
-    }
-
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let fooSelected = contentArray[indexPath.row]
-        let detailVC: DetailVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailVC
-        
-        detailVC.imageDetail = fooSelected.imageName
-        detailVC.descripionLabel = fooSelected.description
-        detailVC.moreInfoDetail = fooSelected.moreInfo
-        
-        self.presentViewController(detailVC, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

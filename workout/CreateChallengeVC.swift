@@ -10,9 +10,7 @@ import UIKit
 
 class CreateChallengeVC: UIViewController {
     
-    @IBAction func doneButton(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion:{})
-    }
+   
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +21,11 @@ class CreateChallengeVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func dismissBtn(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion:{})
     }
     
 
