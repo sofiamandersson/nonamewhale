@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        UITabBar.appearance().barTintColor = UIColor.redColor()
+        
+        UITabBar.appearance().tintColor = UIColor.whiteColor(); //selected icon color
+        UITabBar.appearance().barTintColor = UIColor.whiteColor(); //tabbar color
+        
         
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         //splitViewController.navigationController?.navigationBar.tintColor = UIColor.whiteColor()

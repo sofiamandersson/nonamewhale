@@ -746,15 +746,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SendAChallenge" width="114" height="114"/>
-        <image name="achievements1" width="114" height="114"/>
+        <image name="SendAChallenge" width="750" height="1334"/>
+        <image name="achievements1" width="692" height="248"/>
         <image name="addnote" width="81" height="81"/>
         <image name="addview" width="750" height="1234"/>
         <image name="badge" width="45" height="66"/>
         <image name="badgesview" width="750" height="1334"/>
         <image name="barimage" width="689" height="39"/>
         <image name="bookingfilter" width="750" height="149"/>
-        <image name="boxUnchecked" width="114" height="114"/>
+        <image name="boxUnchecked" width="38" height="38"/>
         <image name="bpimage" width="90" height="91"/>
         <image name="bpimageorange" width="113" height="113"/>
         <image name="disclosureindicator" width="25" height="42"/>
