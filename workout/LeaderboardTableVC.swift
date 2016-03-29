@@ -20,8 +20,7 @@ class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+
         
         
         leaderboardArray = LeaderboardDataGenerator.generateLeaderboardData()

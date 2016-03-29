@@ -12,7 +12,6 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
  
-    @IBOutlet weak var largeProfileImage: UIImageView!
     
     var workoutFeedArray: [WorkoutFeedItem] = [WorkoutFeedItem]()
 

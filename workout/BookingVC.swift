@@ -20,6 +20,9 @@ class BookingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         bookingArray = BookingDataGenerator.generateBookingData()
         
+        self.tableView.rowHeight = 120.0
+        
+        
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -37,13 +40,13 @@ class BookingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("BookingCell", forIndexPath: indexPath) as! BookingTableCell
         
-        //let bookingItem = bookingArray[indexPath.row]
+        let bookingItem = bookingArray[indexPath.row]
         
         
-//        cell.cellRank.text = leaderboardItem.rankLeaderboard
-//        cell.cellName.text = leaderboardItem.nameLeaderboard
-//        cell.cellTrophy.text = leaderboardItem.trophysLeaderboard
-//        cell.cellPoints.text = leaderboardItem.pointsLeaderboard
+        cell.cellName.text = bookingItem.nameBooking
+        cell.cellDate.text = bookingItem.dateBooking
+        cell.cellLocation.text = bookingItem.locationBooking
+        cell.sportsIcon.image = UIImage( named: bookingItem.sportBooking)
         
         let currentColor = blueColorArray[indexPath.row % blueColorArray.count]
         cell.contentView.backgroundColor = currentColor
