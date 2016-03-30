@@ -19,7 +19,6 @@ class ProfileFeedDetailVC: UIViewController {
     var labelDetail = ""
     var imageDetail = ""
     var dateDetail = ""
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +33,6 @@ class ProfileFeedDetailVC: UIViewController {
         
     }
 
-    
     @IBAction func dismissBtn(sender: UIBarButtonItem) {
         
         self.dismissViewControllerAnimated(true, completion:{})

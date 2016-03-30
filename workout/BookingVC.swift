@@ -17,11 +17,9 @@ class BookingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         bookingArray = BookingDataGenerator.generateBookingData()
         
         self.tableView.rowHeight = 120.0
-        
         
     }
 

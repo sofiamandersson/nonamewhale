@@ -23,6 +23,5 @@ class LeaderboardItem {
         self.pointsLeaderboard = pointsLeaderboard
         
     }
-   
-    
+
 }

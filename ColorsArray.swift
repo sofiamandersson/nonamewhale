@@ -9,14 +9,11 @@
 import Foundation
 import UIKit
 
-
 let darkBlue = UIColor(red: 50/255.0, green: 153/255.0, blue: 187/255.0, alpha: 1.0)
 let mediumBlue = UIColor(red: 64/255.0, green: 164/255.0, blue: 197/255.0, alpha: 1.0)
 let lightBlue = UIColor(red: 78/255.0, green: 175/255.0, blue: 207/255.0, alpha: 1.0)
 
 var blueColorArray = [mediumBlue, lightBlue, mediumBlue, darkBlue]
-
-
 
 
 let darkGrey = UIColor(red: 236/255.0, green: 236/255.0, blue: 236/255.0, alpha: 1.0)

@@ -20,13 +20,6 @@
 		05840EB81CA6074B007DD2ED /* BookingDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05840EB71CA6074B007DD2ED /* BookingDataGenerator.swift */; };
 		05840EBA1CA608DC007DD2ED /* BookingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05840EB91CA608DC007DD2ED /* BookingTableCell.swift */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
-		C0900F3D1C9C07D100F0945A /* ChallengesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */; };
-		C0900F3F1C9C0BE600F0945A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0900F3E1C9C0BE600F0945A /* Colors.swift */; };
-		C0D8CD551C9325AA00981788 /* ChallengesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */; };
-		C0D8CD5B1C96F4FF00981788 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5A1C96F4FF00981788 /* myCell.swift */; };
-		C0D8CD631C97340900981788 /* AchievementsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD621C97340900981788 /* AchievementsTableVC.swift */; };
-		C0D8CD691C98429100981788 /* myAchievementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD681C98429100981788 /* myAchievementsCell.swift */; };
-		C0D8CD8A1C9B1E4300981788 /* CreateChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */; };
 		05CDBDCB1CA3DBE70019E833 /* ProfileDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDBDCA1CA3DBE70019E833 /* ProfileDataGenerator.swift */; };
 		05CDBDCD1CA3E1080019E833 /* LeaderboardDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDBDCC1CA3E1080019E833 /* LeaderboardDataGenerator.swift */; };
 		05D7802A1C9739E0003D5E88 /* ProfileFeedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */; };
@@ -35,6 +28,11 @@
 		05EDD65D1C994CF700D1B13B /* LeaderboardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDD65C1C994CF700D1B13B /* LeaderboardTableCell.swift */; };
 		05F9FA4F1C92F8B100D8261D /* TrophyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */; };
 		05F9FA5D1C930AF100D8261D /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */; };
+		C0900F3D1C9C07D100F0945A /* ChallengesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */; };
+		C0D8CD551C9325AA00981788 /* ChallengesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */; };
+		C0D8CD5B1C96F4FF00981788 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD5A1C96F4FF00981788 /* myCell.swift */; };
+		C0D8CD631C97340900981788 /* AchievementsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD621C97340900981788 /* AchievementsTableVC.swift */; };
+		C0D8CD8A1C9B1E4300981788 /* CreateChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,13 +51,6 @@
 		05840EB71CA6074B007DD2ED /* BookingDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingDataGenerator.swift; sourceTree = "<group>"; };
 		05840EB91CA608DC007DD2ED /* BookingTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableCell.swift; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		C0900F3E1C9C0BE600F0945A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesTableVC.swift; sourceTree = "<group>"; };
-		C0D8CD5A1C96F4FF00981788 /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
-		C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesContent.swift; sourceTree = "<group>"; };
-		C0D8CD621C97340900981788 /* AchievementsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsTableVC.swift; sourceTree = "<group>"; };
-		C0D8CD681C98429100981788 /* myAchievementsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAchievementsCell.swift; sourceTree = "<group>"; };
-		C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChallengeVC.swift; sourceTree = "<group>"; };
 		05CDBDCA1CA3DBE70019E833 /* ProfileDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataGenerator.swift; sourceTree = "<group>"; };
 		05CDBDCC1CA3E1080019E833 /* LeaderboardDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardDataGenerator.swift; sourceTree = "<group>"; };
 		05D780291C9739E0003D5E88 /* ProfileFeedDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFeedDetailVC.swift; sourceTree = "<group>"; };
@@ -68,6 +59,11 @@
 		05EDD65C1C994CF700D1B13B /* LeaderboardTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableCell.swift; sourceTree = "<group>"; };
 		05F9FA4E1C92F8B100D8261D /* TrophyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyVC.swift; sourceTree = "<group>"; };
 		05F9FA5C1C930AF100D8261D /* ProfileTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableVC.swift; path = ../ProfileTableVC.swift; sourceTree = "<group>"; tabWidth = 5; };
+		C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesTableVC.swift; sourceTree = "<group>"; };
+		C0D8CD5A1C96F4FF00981788 /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesContent.swift; sourceTree = "<group>"; };
+		C0D8CD621C97340900981788 /* AchievementsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsTableVC.swift; sourceTree = "<group>"; };
+		C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChallengeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +98,9 @@
 			children = (
 				054FA60B1C8F19F8004BEEB4 /* AppDelegate.swift */,
 				05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */,
-				C0900F3E1C9C0BE600F0945A /* Colors.swift */,
-				C0D8CD881C99585900981788 /* C&A */,
 				05634ADB1CA417A2007A7C45 /* ColorsArray.swift */,
 				05EDD65B1C9948E500D1B13B /* Leaderboard */,
+				C0D8CD881C99585900981788 /* C&A */,
 				05840EB21CA5FDE8007DD2ED /* Booking */,
 				05EDD65A1C99488300D1B13B /* Profile */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
@@ -114,35 +109,6 @@
 				054FA6171C8F19F9004BEEB4 /* Info.plist */,
 			);
 			path = workout;
-			sourceTree = "<group>";
-		};
-		05D4CFE81CAAB7FD004F3DDB /* Challanges */ = {
-			isa = PBXGroup;
-			children = (
-				C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */,
-				C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */,
-				C0D8CD5A1C96F4FF00981788 /* myCell.swift */,
-			);
-			name = Challanges;
-			sourceTree = "<group>";
-		};
-		05D4CFE91CAAB860004F3DDB /* Achivements */ = {
-			isa = PBXGroup;
-			children = (
-				C0D8CD621C97340900981788 /* AchievementsTableVC.swift */,
-				C0D8CD681C98429100981788 /* myAchievementsCell.swift */,
-			);
-			name = Achivements;
-			sourceTree = "<group>";
-		};
-		C0D8CD881C99585900981788 /* C&A */ = {
-			isa = PBXGroup;
-			children = (
-				05D4CFE81CAAB7FD004F3DDB /* Challanges */,
-				05D4CFE91CAAB860004F3DDB /* Achivements */,
-				C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */,
-			);
-			name = "C&A";
 			sourceTree = "<group>";
 		};
 		0582A29C1C96C04400801B7D /* ProfileFeed */ = {
@@ -163,6 +129,24 @@
 				05840EB71CA6074B007DD2ED /* BookingDataGenerator.swift */,
 			);
 			name = Booking;
+			sourceTree = "<group>";
+		};
+		05D4CFE81CAAB7FD004F3DDB /* Challanges */ = {
+			isa = PBXGroup;
+			children = (
+				C0D8CD541C9325AA00981788 /* ChallengesTableVC.swift */,
+				C0D8CD5A1C96F4FF00981788 /* myCell.swift */,
+				C0D8CD5C1C97013A00981788 /* ChallengesContent.swift */,
+			);
+			name = Challanges;
+			sourceTree = "<group>";
+		};
+		05D4CFE91CAAB860004F3DDB /* Achivements */ = {
+			isa = PBXGroup;
+			children = (
+				C0D8CD621C97340900981788 /* AchievementsTableVC.swift */,
+			);
+			name = Achivements;
 			sourceTree = "<group>";
 		};
 		05EDD65A1C99488300D1B13B /* Profile */ = {
@@ -187,6 +171,16 @@
 				05CDBDCC1CA3E1080019E833 /* LeaderboardDataGenerator.swift */,
 			);
 			name = Leaderboard;
+			sourceTree = "<group>";
+		};
+		C0D8CD881C99585900981788 /* C&A */ = {
+			isa = PBXGroup;
+			children = (
+				05D4CFE81CAAB7FD004F3DDB /* Challanges */,
+				C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */,
+				05D4CFE91CAAB860004F3DDB /* Achivements */,
+			);
+			name = "C&A";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D8CD8A1C9B1E4300981788 /* CreateChallengeVC.swift in Sources */,
-				C0900F3F1C9C0BE600F0945A /* Colors.swift in Sources */,
-				C0D8CD691C98429100981788 /* myAchievementsCell.swift in Sources */,
 				C0900F3D1C9C07D100F0945A /* ChallengesContent.swift in Sources */,
 				05840EB41CA5FE2B007DD2ED /* BookingVC.swift in Sources */,
 				05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */,

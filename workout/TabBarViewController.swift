@@ -10,18 +10,19 @@ import UIKit
 
 extension UIImage {
     class func imageWithColor(color: UIColor, size: CGSize) -> UIImage {
+        
         let rect: CGRect = CGRectMake(0, 0, size.width, size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         color.setFill()
         UIRectFill(rect)
+        
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         return image
     }
     
-}
-
+}//end of extension
 
 class TabBarViewController: UITabBarController {
     
@@ -47,13 +48,6 @@ class TabBarViewController: UITabBarController {
         
         
         
-    }
+    }// end of viewDidLoad
 
 }
-
-
-//        self.tabBar.items.in
-//
-//        if self.tabBar.itemPositioning.rawValue == 1 {
-//            self.tabBar.tintColor = UIColor.redColor();//selected icon color
-//        }

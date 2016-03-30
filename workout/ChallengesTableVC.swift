@@ -10,14 +10,17 @@ import UIKit
 
 class ChallengesTableVC: UITableViewController {
     
-    let kChallengesCellHeight: CGFloat = 80.0
-    let kAchievementsCellHeight: CGFloat = 112.0
+    let kChallengesCellHeight: CGFloat = 120.0
+    let kAchievementsCellHeight: CGFloat = 124.0
     
     @IBOutlet weak var createChallengeFooterView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     @IBAction func segmentedControllChellangesAchievements(sender: AnyObject) {
+        
         createChallengeFooterView.hidden = segmentedControl.selectedSegmentIndex != 0
         self.tableView.reloadData()
+        
     }
 
     var contentArray: [ChallengesContent] = [ChallengesContent]()
@@ -25,69 +28,70 @@ class ChallengesTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let content1 = ChallengesContent(imageName: "profileimage1.png", desc: "PerLien", moreInfo: "Boo - lalalalalalaaalaaa")
-        let content2 = ChallengesContent(imageName: "profileimage2.png", desc: "Karlsson", moreInfo: "YAAAS YAAS YAAAS")
-        let content3 = ChallengesContent(imageName: "profileimage3.png", desc: "michelle90", moreInfo: "Boo - lala2lalalal2aaalaaa")
-        let content4 = ChallengesContent(imageName: "profileimage4.png", desc: "krollanders", moreInfo: "YAAA2S YAAS YAAA2S2222")
+        let challenges1 = ChallengesContent(imageName: "profileimage1.png", userName: "PerLien", desc: "Challenged you to swim 5 km", moreInfo: "before 25.03.2016")
+        let challenges2 = ChallengesContent(imageName: "profileimage2.png", userName: "Karlsson", desc: "Challenged you to run 10 km ", moreInfo: "before 27.03.2016")
+        let challenges3 = ChallengesContent(imageName: "profileimage3.png", userName: "michelle90", desc: "Challenged you to cycle 15 km ", moreInfo: "before 01.04.2016")
+        let challenges4 = ChallengesContent(imageName: "profileimage4.png", userName: "krollanders", desc: "Challenged you to swim 2 km", moreInfo: "before 03.04.2016")
         
-        contentArray.append(content1)
-        contentArray.append(content2)
-        contentArray.append(content3)
-        contentArray.append(content4)
-        
-//        Needs constraints for cells
-//        self.tableView.estimatedRowHeight = 80.0
-//        
-//        self.tableView.rowHeight = UITableViewAutomaticDimension
+        contentArray.append(challenges1)
+        contentArray.append(challenges2)
+        contentArray.append(challenges3)
+        contentArray.append(challenges4)
+
+
     }
 
-
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return contentArray.count
     }
     
-    // ChallengeCell to right Prototype Cell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // reuseIdentifier :)
+
         let reuseIdentifier = cellIdentiferBasedOnSelectedType()
+        
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! myCell
+        
+        let challangesItem = contentArray[indexPath.row]
+        
+        //cell.achievementsImage.image = UIImage(named: challangesItem.imageName)
+        cell.myUsername.text = challangesItem.userName
+        cell.myLabel.text = challangesItem.description
+        cell.myMoreInfo.text = challangesItem.moreInfo
+        
 
-//        let fooItem = contentArray[indexPath.row]
-        
-        // IMAGES AND TEXT
-//        cell.myImageView.image = UIImage(named: fooItem.imageName)
-//        cell.myLabel.text = fooItem.description
-        
-        // COLORS
-        let currentColor = greenColors[indexPath.row % greenColors.count]
+        let currentColor = blueColorArray[indexPath.row % blueColorArray.count]
         cell.contentView.backgroundColor = currentColor
-
+        
         return cell
-    }
+        
+    }// end of cellIdentiferBasedOnSelectedType
     
-    // returns right identifyer
+
     func cellIdentiferBasedOnSelectedType() -> String {
+        
         switch segmentedControl.selectedSegmentIndex {
+            
             case 0: return "ChallengesCell"
             case 1: return "AchievementsCell"
             default: return ""
+            
         }
-    }
+    }//end of cellIdentiferBasedOnSelectedType
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if segmentedControl.selectedSegmentIndex == 0 {
+            
             return kChallengesCellHeight
+            
         } else {
+            
             return kAchievementsCellHeight
+            
         }
-    }
+    }//end of heightForRowAtIndexPath
 }

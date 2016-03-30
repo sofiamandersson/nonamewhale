@@ -12,13 +12,10 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
  
-    
     var workoutFeedArray: [WorkoutFeedItem] = [WorkoutFeedItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         
         workoutFeedArray = ProfileDataGenerator.generateProfileData()
         
@@ -35,7 +32,6 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
             
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
             
@@ -61,13 +57,7 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         feedItemSelected.labelDetail = feedItemDetail.labelProfileFeed
         feedItemSelected.dateDetail = feedItemDetail.dateProfileFeed
         
-        
-        
-        
         self.presentViewController(feedItemSelected, animated: true, completion: nil)
-        
-    
-        
         
     }// end of didSelectRowAtIndexPath
     

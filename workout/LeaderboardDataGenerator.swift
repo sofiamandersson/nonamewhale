@@ -23,7 +23,6 @@ class LeaderboardDataGenerator: NSObject {
         let person9 = LeaderboardItem(rankLeaderboard: "9", nameLeaderboard: "soffan78", trophysLeaderboard: "2", pointsLeaderboard: "259")
         let person10 = LeaderboardItem(rankLeaderboard: "10", nameLeaderboard: "SamuelSwimmer", trophysLeaderboard: "2", pointsLeaderboard: "245")
         
-        
         return [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10]
         
     }

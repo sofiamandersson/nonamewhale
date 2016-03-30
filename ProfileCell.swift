@@ -13,5 +13,4 @@ class ProfileCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var headlineLabel: UILabel!
 
-    
 }

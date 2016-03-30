@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -20,13 +18,8 @@ class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-        
         leaderboardArray = LeaderboardDataGenerator.generateLeaderboardData()
     
-
-        
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -54,37 +47,22 @@ class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewData
         let currentColor = blueColorArray[indexPath.row % blueColorArray.count]
         cell.contentView.backgroundColor = currentColor
         
-        if(indexPath.row == 3){
-            
-            cell.contentView.backgroundColor = UIColor.whiteColor()
-            cell.cellName.textColor = UIColor.blackColor()
-            
-            cell.cellRank.textColor = UIColor.whiteColor()
-            cell.cellPoints.textColor = UIColor.whiteColor()
-            
-            cell.rankImage.image = UIImage(named: "rankimageselection.png")
-            cell.pointsImage.image = UIImage(named: "bpimageorange.png")
-            
-        }
-
         
-
+            if(indexPath.row == 3){
+            
+                cell.contentView.backgroundColor = UIColor.whiteColor()
+                cell.cellName.textColor = UIColor.blackColor()
+            
+                cell.cellRank.textColor = UIColor.whiteColor()
+                cell.cellPoints.textColor = UIColor.whiteColor()
+            
+                cell.rankImage.image = UIImage(named: "rankimageselection.png")
+                cell.pointsImage.image = UIImage(named: "bpimageorange.png")
+            
+            }
+        
         return cell
-    }
+        
+    }// end of cellForRowAtIndexPath
     
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-//        selectedCell.contentView.backgroundColor = UIColor.whiteColor()
-//        
-////        cellName.contentView.text = UIColor.redColor()
-//        
-//        
-//        
-//        
-//        
-//        
-//    }
-    
-
 }

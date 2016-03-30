@@ -23,6 +23,4 @@ class BookingDataGenerator: NSObject {
         
     }
     
-    
-
 }
