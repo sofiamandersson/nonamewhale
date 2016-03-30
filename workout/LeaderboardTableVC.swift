@@ -12,7 +12,6 @@ class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     var leaderboardArray: [LeaderboardItem] = [LeaderboardItem]()
 
     override func viewDidLoad() {
@@ -23,12 +22,10 @@ class LeaderboardTableVC: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    
         return 1
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     
         return leaderboardArray.count
     }
 

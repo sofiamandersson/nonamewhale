@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = UIColor.whiteColor(); //tabbar color
         
         UIApplication.sharedApplication().statusBarStyle = .LightContent
-        //splitViewController.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         
         return true
     }

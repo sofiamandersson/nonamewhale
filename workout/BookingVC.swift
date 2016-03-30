@@ -24,12 +24,10 @@ class BookingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return bookingArray.count
     }
     
@@ -52,7 +50,7 @@ class BookingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         return cell
-    }
+    }//end of cellForRowAtIndexPath
 
 
 }

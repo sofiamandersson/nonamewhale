@@ -36,7 +36,6 @@ class TabBarViewController: UITabBarController {
         self.tabBar.barTintColor = UIColor(red: 61/255.0, green: 61/255.0, blue: 61/255.0, alpha: 1.0)
         self.tabBar.tintColor = UIColor.whiteColor()
         
-        
         let itemWidth: CGFloat = self.tabBar.frame.size.width / CGFloat.init(kNumberOfControllers);
         self.tabBar.selectionIndicatorImage = UIImage.imageWithColor(UIColor(red: 109/255.0, green: 109/255.0, blue: 109/255.0, alpha: 1.0), size: CGSizeMake(itemWidth, self.tabBar.frame.size.height))
         
@@ -45,8 +44,6 @@ class TabBarViewController: UITabBarController {
         addBgView.backgroundColor = addBgColor
     
         tabBar.insertSubview(addBgView, atIndex: 0)
-        
-        
         
     }// end of viewDidLoad
 

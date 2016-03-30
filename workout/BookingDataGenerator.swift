@@ -18,7 +18,6 @@ class BookingDataGenerator: NSObject {
         let race4 = BookingItem(nameBooking: "Saltrö Ultimate", dateBooking: "13 Augusti, 2016", locationBooking: "Saltarö, Stockholm", sportBooking: "iconsrace4.png")
         let race5 = BookingItem(nameBooking: "Sala Silverman", dateBooking: "", locationBooking: "iconsrace5.png", sportBooking: "iconsrace5.png")
         
-        
         return [race1, race2, race3, race4, race5]
         
     }

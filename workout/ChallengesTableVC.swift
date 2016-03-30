@@ -38,7 +38,6 @@ class ChallengesTableVC: UITableViewController {
         contentArray.append(challenges3)
         contentArray.append(challenges4)
 
-
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

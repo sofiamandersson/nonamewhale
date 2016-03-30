@@ -44,7 +44,6 @@ class AchievementsTableVC: UITableViewController {
         
         cell.achievementsImage.image = UIImage(named: achievementsItem.imageName)
         
-        
         return cell
     }// end of cellForRowAtIndexPath
 

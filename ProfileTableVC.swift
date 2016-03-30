@@ -20,7 +20,8 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         workoutFeedArray = ProfileDataGenerator.generateProfileData()
         
         self.tableView.rowHeight = 80.0
-    }
+        
+    }// end of viewDidLoad
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -30,7 +31,6 @@ class ProfileTableVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return workoutFeedArray.count
     }
 
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
