@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Leaderboard-->
@@ -132,13 +131,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-ur-Ul8">
-                                <rect key="frame" x="0.0" y="545" width="375" height="79"/>
+                                <rect key="frame" x="0.0" y="540" width="375" height="84"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookingfilter" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-tu-ZMX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                        <rect key="frame" x="0.0" y="5" width="375" height="71"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-rX-mol">
                                 <rect key="frame" x="0.0" y="20" width="375" height="524"/>
@@ -434,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s30-mq-8hE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990.5" y="2064.5"/>
+            <point key="canvasLocation" x="1534.5" y="2368.5"/>
         </scene>
         <!--Profile Feed DetailVC-->
         <scene sceneID="zoD-Og-Kdp">
@@ -569,7 +568,7 @@
                         <segue destination="2ZF-UB-yq5" kind="relationship" relationship="viewControllers" id="TN0-Ov-oeS"/>
                         <segue destination="3fj-gN-cc2" kind="relationship" relationship="viewControllers" id="6AY-yd-hrT"/>
                         <segue destination="EnF-O1-Ga9" kind="relationship" relationship="viewControllers" id="zFm-g2-bFP"/>
-                        <segue destination="0VH-Cd-wlg" kind="relationship" relationship="viewControllers" id="DnS-7S-543"/>
+                        <segue destination="Rqp-w0-9Q4" kind="relationship" relationship="viewControllers" id="WVA-si-Azq"/>
                         <segue destination="vMy-M2-de0" kind="relationship" relationship="viewControllers" id="5K0-pS-Y2h"/>
                     </connections>
                 </tabBarController>
@@ -577,215 +576,137 @@
             </objects>
             <point key="canvasLocation" x="-534.5" y="45.5"/>
         </scene>
-        <!--Challenges-->
-        <scene sceneID="ndd-lM-NDa">
+        <!--Challanges-->
+        <scene sceneID="D9r-9l-veq">
             <objects>
-                <tableViewController storyboardIdentifier="ChallengesTVC" title="Challenges" id="0VH-Cd-wlg" customClass="ChallengesTableVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="120" sectionHeaderHeight="18" sectionFooterHeight="18" id="R4P-yU-rJS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Mn3-jP-Fct" userLabel="Header View">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPL-NZ-BpG">
-                                    <rect key="frame" x="0.0" y="18" width="375" height="44"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="barTintColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <textAttributes key="titleTextAttributes">
-                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </textAttributes>
-                                    <items>
-                                        <navigationItem id="AcW-9K-xsr">
-                                            <nil key="title"/>
-                                            <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="d8r-eR-n4N">
-                                                <rect key="frame" x="9" y="6" width="357" height="32"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <segments>
-                                                    <segment title="Chellanges"/>
-                                                    <segment title="Achievements"/>
-                                                </segments>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <connections>
-                                                    <action selector="segmentedControllChellangesAchievements:" destination="0VH-Cd-wlg" eventType="valueChanged" id="gsi-gh-GRH"/>
-                                                </connections>
-                                            </segmentedControl>
-                                        </navigationItem>
-                                    </items>
-                                </navigationBar>
-                            </subviews>
-                            <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="qRj-zS-48k" userLabel="Footer View">
-                            <rect key="frame" x="0.0" y="396.5" width="375" height="75"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-2S-6s5">
-                                    <rect key="frame" x="8" y="6" width="359" height="69"/>
-                                    <color key="backgroundColor" red="0.99215686270000003" green="0.52549019610000003" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <state key="normal" title="Create Challenge"/>
-                                    <connections>
-                                        <segue destination="5PK-Qh-md4" kind="show" id="F82-sV-Eo0">
-                                            <nil key="action"/>
-                                        </segue>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" red="0.99215686270000003" green="0.52549019610000003" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChallengesCell" rowHeight="119" id="q3w-Mz-c4G" customClass="myCell" customModule="workout" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="111.5" width="375" height="119"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q3w-Mz-c4G" id="U7x-Jb-c4y">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-vc-vyq">
-                                            <rect key="frame" x="81" y="50" width="173" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="39U-xZ-6mJ"/>
-                                                <constraint firstAttribute="width" constant="173" id="NGl-Ks-cLE"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boxUnchecked" translatesAutoresizingMaskIntoConstraints="NO" id="tK8-Be-UR3">
-                                            <rect key="frame" x="348" y="49" width="19" height="19"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="19" id="6rX-J0-zkR"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5N-2D-BX3">
-                                            <rect key="frame" x="81" y="31" width="173" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKI-W5-sGC">
-                                            <rect key="frame" x="81" y="74" width="173" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileimage1" translatesAutoresizingMaskIntoConstraints="NO" id="Y35-dc-15m">
-                                            <rect key="frame" x="13" y="31" width="60" height="60"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="60" id="0Ke-TB-ewm"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="trailing" secondItem="J5N-2D-BX3" secondAttribute="trailing" id="8nI-i6-l2g"/>
-                                        <constraint firstItem="TKI-W5-sGC" firstAttribute="top" secondItem="JRt-vc-vyq" secondAttribute="bottom" constant="3" id="9Dc-HO-f34"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="trailing" secondItem="TKI-W5-sGC" secondAttribute="trailing" id="B1e-rM-I8K"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="leading" secondItem="Y35-dc-15m" secondAttribute="trailing" constant="8" symbolic="YES" id="EQv-4j-wO6"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="centerY" secondItem="Y35-dc-15m" secondAttribute="centerY" id="Efk-gc-4sR"/>
-                                        <constraint firstItem="tK8-Be-UR3" firstAttribute="leading" secondItem="JRt-vc-vyq" secondAttribute="trailing" constant="94" id="FD8-vT-7Np"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="leading" secondItem="U7x-Jb-c4y" secondAttribute="leading" constant="81" id="IcE-oc-hpu"/>
-                                        <constraint firstItem="tK8-Be-UR3" firstAttribute="centerY" secondItem="U7x-Jb-c4y" secondAttribute="centerY" id="MZE-cK-uj3"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="top" secondItem="U7x-Jb-c4y" secondAttribute="topMargin" constant="42" id="OWS-rr-BeO"/>
-                                        <constraint firstItem="J5N-2D-BX3" firstAttribute="top" secondItem="U7x-Jb-c4y" secondAttribute="topMargin" constant="23" id="TUM-Fy-Zdf"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="leading" secondItem="J5N-2D-BX3" secondAttribute="leading" id="cyT-gj-okW"/>
-                                        <constraint firstItem="J5N-2D-BX3" firstAttribute="top" secondItem="Y35-dc-15m" secondAttribute="top" id="mP9-Rs-U19"/>
-                                        <constraint firstItem="JRt-vc-vyq" firstAttribute="leading" secondItem="TKI-W5-sGC" secondAttribute="leading" id="opb-CP-oUw"/>
-                                        <constraint firstItem="tK8-Be-UR3" firstAttribute="top" secondItem="U7x-Jb-c4y" secondAttribute="topMargin" constant="41" id="pB1-Mn-6az"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="myImageView" destination="Y35-dc-15m" id="jcb-F7-1GI"/>
-                                    <outlet property="myLabel" destination="JRt-vc-vyq" id="m0o-cg-LlK"/>
-                                    <outlet property="myMoreInfo" destination="TKI-W5-sGC" id="sEA-aK-tdr"/>
-                                    <outlet property="myUsername" destination="J5N-2D-BX3" id="vBg-dN-Ni2"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AchievementsCell" rowHeight="148" id="hAl-tP-6MZ" customClass="myCell" customModule="workout" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="230.5" width="375" height="148"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hAl-tP-6MZ" id="uOy-59-zEf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="147.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="achievements1" translatesAutoresizingMaskIntoConstraints="NO" id="mbP-hx-M3E">
-                                            <rect key="frame" x="14" y="0.0" width="346" height="124"/>
-                                        </imageView>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="achievementsImage" destination="mbP-hx-M3E" id="ZAG-UL-2uv"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0VH-Cd-wlg" id="aRO-uV-pDA"/>
-                            <outlet property="delegate" destination="0VH-Cd-wlg" id="J3Q-fF-apU"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Callenges" image="iconchallanges" id="8YQ-Rg-yXn"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="createChallengeFooterView" destination="qRj-zS-48k" id="mHP-Xp-qFZ"/>
-                        <outlet property="segmentedControl" destination="d8r-eR-n4N" id="NND-qP-mH4"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eng-ur-sos" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="309.5" y="1458.5"/>
-        </scene>
-        <!--Create ChallengeVC-->
-        <scene sceneID="6nc-18-lNO">
-            <objects>
-                <viewController id="5PK-Qh-md4" customClass="CreateChallengeVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Challanges" id="Rqp-w0-9Q4" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gmu-8W-4eb"/>
-                        <viewControllerLayoutGuide type="bottom" id="V3c-Pa-wTZ"/>
+                        <viewControllerLayoutGuide type="top" id="4ha-Ep-jzt"/>
+                        <viewControllerLayoutGuide type="bottom" id="5dd-DV-bhw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3BM-w6-i0Y">
+                    <view key="view" contentMode="scaleToFill" id="jZz-xk-obi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SendAChallenge" translatesAutoresizingMaskIntoConstraints="NO" id="ErH-bH-8DR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="challengesview" translatesAutoresizingMaskIntoConstraints="NO" id="Um0-sO-P0d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-xz-0mP">
-                                <rect key="frame" x="8" y="33" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIb-ga-YIz">
+                                <rect key="frame" x="188" y="33" width="160" height="30"/>
                                 <connections>
-                                    <action selector="dismissBtn:" destination="5PK-Qh-md4" eventType="touchUpInside" id="3st-et-KfM"/>
+                                    <segue destination="v9H-cz-YnH" kind="showDetail" animates="NO" id="3fQ-hD-A3S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZU-bc-7L0">
+                                <rect key="frame" x="0.0" y="545" width="375" height="73"/>
+                                <connections>
+                                    <segue destination="nxp-yy-9c6" kind="show" id="gW4-Ek-0ve"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Challanges" image="iconchallanges" id="ZKh-Gh-Xal"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLo-JQ-ePW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.5" y="1505.5"/>
+        </scene>
+        <!--Create ChallengeVC-->
+        <scene sceneID="IN1-WU-lrE">
+            <objects>
+                <viewController id="nxp-yy-9c6" customClass="CreateChallengeVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="79f-Jb-sBw"/>
+                        <viewControllerLayoutGuide type="bottom" id="nWX-W9-m15"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vig-wF-eiY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0N-Xt-N5e">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Create Challange" id="ceF-70-cVZ">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="UlP-Aq-1jH">
+                                            <connections>
+                                                <action selector="dismissBtn:" destination="nxp-yy-9c6" id="BBS-kM-y9a"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sendachallangeview" translatesAutoresizingMaskIntoConstraints="NO" id="PZd-uD-d7B">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZS-Ds-5a1">
+                                <rect key="frame" x="0.0" y="618" width="375" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1960784314" green="0.59999999999999998" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="navBar" destination="e0N-Xt-N5e" id="Umf-Ox-6B3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHT-D7-E5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.5" y="762.5"/>
+        </scene>
+        <!--New AchievementsVC-->
+        <scene sceneID="Nye-oC-JNe">
+            <objects>
+                <viewController id="v9H-cz-YnH" customClass="NewAchievementsVC" customModule="workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cTU-in-80y"/>
+                        <viewControllerLayoutGuide type="bottom" id="u8V-Or-yZw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZFF-SF-WlQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="achievementsview" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-rT-Yyx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB6-SB-DDj">
+                                <rect key="frame" x="25" y="34" width="164" height="30"/>
+                                <connections>
+                                    <action selector="dismissBtn:" destination="v9H-cz-YnH" eventType="touchUpInside" id="PW8-Fq-e9W"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navbar" translatesAutoresizingMaskIntoConstraints="NO" id="8df-Mq-WUd">
+                                <rect key="frame" x="0.0" y="616" width="375" height="51"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OgX-AG-6de"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kFH-kv-wLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXX-tf-0wG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990.5" y="1325.5"/>
+            <point key="canvasLocation" x="763.5" y="1505.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="SendAChallenge" width="750" height="1334"/>
-        <image name="achievements1" width="692" height="248"/>
+        <image name="achievementsview" width="750" height="1231"/>
         <image name="addnote" width="81" height="81"/>
         <image name="addview" width="750" height="1234"/>
         <image name="badge" width="45" height="66"/>
         <image name="badgesview" width="750" height="1334"/>
         <image name="barimage" width="689" height="39"/>
         <image name="bookingfilter" width="750" height="149"/>
-        <image name="boxUnchecked" width="38" height="38"/>
         <image name="bpimage" width="90" height="91"/>
         <image name="bpimageorange" width="113" height="113"/>
+        <image name="challengesview" width="750" height="1231"/>
         <image name="disclosureindicator" width="25" height="42"/>
         <image name="filter" width="750" height="252"/>
         <image name="friends" width="53" height="45"/>
@@ -798,10 +719,11 @@
         <image name="iconlocation" width="19" height="25"/>
         <image name="iconprofile" width="15" height="17"/>
         <image name="iconsrace1" width="74" height="32"/>
+        <image name="navbar" width="750" height="98"/>
         <image name="profileimage" width="248" height="281"/>
-        <image name="profileimage1" width="114" height="114"/>
         <image name="rankimage" width="62" height="62"/>
         <image name="seasonimage" width="47" height="57"/>
+        <image name="sendachallangeview" width="750" height="1117"/>
         <image name="trophy" width="53" height="61"/>
         <image name="trophyroomview" width="750" height="1334"/>
     </resources>

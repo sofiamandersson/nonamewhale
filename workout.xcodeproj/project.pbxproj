@@ -19,6 +19,7 @@
 		05840EB61CA60145007DD2ED /* BookingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05840EB51CA60145007DD2ED /* BookingItem.swift */; };
 		05840EB81CA6074B007DD2ED /* BookingDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05840EB71CA6074B007DD2ED /* BookingDataGenerator.swift */; };
 		05840EBA1CA608DC007DD2ED /* BookingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05840EB91CA608DC007DD2ED /* BookingTableCell.swift */; };
+		0597C9661CAC4305006FEC32 /* NewAchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597C9651CAC4305006FEC32 /* NewAchievementsVC.swift */; };
 		05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */; };
 		05CDBDCB1CA3DBE70019E833 /* ProfileDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDBDCA1CA3DBE70019E833 /* ProfileDataGenerator.swift */; };
 		05CDBDCD1CA3E1080019E833 /* LeaderboardDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDBDCC1CA3E1080019E833 /* LeaderboardDataGenerator.swift */; };
@@ -50,6 +51,7 @@
 		05840EB51CA60145007DD2ED /* BookingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingItem.swift; sourceTree = "<group>"; };
 		05840EB71CA6074B007DD2ED /* BookingDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingDataGenerator.swift; sourceTree = "<group>"; };
 		05840EB91CA608DC007DD2ED /* BookingTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableCell.swift; sourceTree = "<group>"; };
+		0597C9651CAC4305006FEC32 /* NewAchievementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAchievementsVC.swift; sourceTree = "<group>"; };
 		05BFC9971C8F2FAC003C9A56 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		05CDBDCA1CA3DBE70019E833 /* ProfileDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataGenerator.swift; sourceTree = "<group>"; };
 		05CDBDCC1CA3E1080019E833 /* LeaderboardDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardDataGenerator.swift; sourceTree = "<group>"; };
@@ -101,6 +103,8 @@
 				05634ADB1CA417A2007A7C45 /* ColorsArray.swift */,
 				05EDD65B1C9948E500D1B13B /* Leaderboard */,
 				C0D8CD881C99585900981788 /* C&A */,
+				0597C9651CAC4305006FEC32 /* NewAchievementsVC.swift */,
+				C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */,
 				05840EB21CA5FDE8007DD2ED /* Booking */,
 				05EDD65A1C99488300D1B13B /* Profile */,
 				054FA60F1C8F19F9004BEEB4 /* Main.storyboard */,
@@ -177,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				05D4CFE81CAAB7FD004F3DDB /* Challanges */,
-				C0D8CD891C9B1E4300981788 /* CreateChallengeVC.swift */,
 				05D4CFE91CAAB860004F3DDB /* Achivements */,
 			);
 			name = "C&A";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D8CD8A1C9B1E4300981788 /* CreateChallengeVC.swift in Sources */,
+				0597C9661CAC4305006FEC32 /* NewAchievementsVC.swift in Sources */,
 				C0900F3D1C9C07D100F0945A /* ChallengesContent.swift in Sources */,
 				05840EB41CA5FE2B007DD2ED /* BookingVC.swift in Sources */,
 				05BFC9981C8F2FAC003C9A56 /* TabBarViewController.swift in Sources */,

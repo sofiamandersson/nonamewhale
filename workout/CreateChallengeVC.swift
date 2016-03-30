@@ -9,9 +9,22 @@
 import UIKit
 
 class CreateChallengeVC: UIViewController {
+    
+    @IBOutlet weak var navBar: UINavigationBar!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navBar.shadowImage = UIImage()
+        self.navBar.translucent = true
+        
+    }
 
-    @IBAction func dismissBtn(sender: UIButton) {
-        self.dismissViewControllerAnimated(true, completion:{})
+    
+    @IBAction func dismissBtn(sender: UIBarButtonItem) {
+        
+        self.dismissViewControllerAnimated(false, completion: {})
     }
 
 }
